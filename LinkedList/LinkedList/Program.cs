@@ -14,10 +14,10 @@ namespace LinkedList
 
             list.Display();
 
-            list.Search(30);
-            Console.WriteLine("-------");
+            Node node = new Node(40);
+            list.InsertAtParticularPosition(30, node);
+            Console.Write("\n After Inserted 40 in b/w 30 and 70 :\n Linked List : ");
             list.Display();
-
 
         }
     }

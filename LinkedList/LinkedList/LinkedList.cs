@@ -87,7 +87,22 @@ namespace LinkedList
             return null;
 
         }
-
+        internal Node InsertAtParticularPosition(int PreviousData, Node Newdata)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                while (temp.data == PreviousData)
+                {
+                    Node newnode = temp.next;
+                    temp.next = Newdata;
+                    temp.next.next = newnode;
+                    break;
+                }
+                temp = temp.next;
+            }
+            return head;
+        }
     }
-}
-   
+    }
+
