@@ -103,6 +103,20 @@ namespace LinkedList
             }
             return head;
         }
+        internal Node RemovaAtParticularNode(int DeleteNode)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                while (temp.next.data == DeleteNode)
+                {
+                    temp.next = temp.next.next;
+                    return head;
+                }
+                temp = temp.next;
+            }
+            return head;
+        }
     }
     }
 

@@ -19,6 +19,10 @@ namespace LinkedList
             Console.Write("\n After Inserted 40 in b/w 30 and 70 :\n Linked List : ");
             list.Display();
 
+            list.RemovaAtParticularNode(40);
+            Console.Write("\n\nAfter remove 40 from Linked List \nLinked List : ");
+            list.Display();
+
         }
     }
 }
